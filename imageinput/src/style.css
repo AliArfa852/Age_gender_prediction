@@ -1,0 +1,69 @@
+/* styles.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-container {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  margin-bottom: 20px;
+  border: 1px solid #2c6b2f; /* Add border to clearly define the container */
+  position: relative;
+  cursor: pointer;
+}
+
+.input-container input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: 20%; /* Adjust bottom position as needed */
+  left: 50%; /* Align button horizontally in the center */
+  transform: translateX(-50%); /* Center the button horizontally */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #0d2f0e;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow content */
+  position: relative;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale the image to cover the entire container */
+}
+
+/* Styling for file input overlay */
+.file-input-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+}
